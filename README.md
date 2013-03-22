@@ -10,7 +10,7 @@
 
 1.  Copy the file lib/ext/integer.rb into your source path.
 2.  Add a ``require`` statement importing integer.rb
-3.  Send ``:prime\_factors`` to any Integer for a list of that integer's prime
+3.  Send ``:prime_factors`` to any Integer for a list of that integer's prime
     factors in ascending order.
 
 # How To Test
