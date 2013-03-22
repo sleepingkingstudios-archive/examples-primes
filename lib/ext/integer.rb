@@ -4,7 +4,8 @@ class Integer
   def prime_factors
     return [] if self < 2
     
-    base, factors, index, step = self, [], 1, 1
+    base, factors, index, step = self, [], 1, 2
+    (factors << 2; base >>= 1) while 0 == (base & 1)
     while (index += step) < self
       (factors << index; base /= index) while 0 == base % index
     end # while
