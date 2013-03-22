@@ -1,2 +1,5 @@
 # OS-specific files
 .DS_Store
+
+# Documentation Tempfiles
+.yardoc

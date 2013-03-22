@@ -1,6 +1,15 @@
 # lib/ext/number.rb
 
 class Integer
+  # @return [Array<Integer>] The prime factors of the integer in ascending
+  #   order. If the factor has a multiplicity of N, it appears in the array N
+  #   times.
+  # @example Find all prime factors of an integer.
+  #   60.prime_factors #=> [2, 2, 3, 5]
+  # @example Find all unique prime factors of an integer.
+  #   60.prime_factors.uniq #=> [2, 3, 5]
+  # @example Find the greatest prime factor of an integer.
+  #   60.prime_factors.last #=> 5
   def prime_factors
     return [] if self < 2
     
